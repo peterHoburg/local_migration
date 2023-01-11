@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "local-migration"
+version = "0.0.1"
+description = "Alembic style migrations for your local system"
+authors = ["Peter <peterHoburg@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "local_migration"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+py-mono-tools = {extras = ["python"], version = "^0.0.38"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
